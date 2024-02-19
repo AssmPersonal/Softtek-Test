@@ -65,9 +65,9 @@ Sirve para consultar al api de Star Wars, el resource y el id son opcionales
 
 #### Response
 
-En este caso el response es cambiante de acuerdo a los parametros que se consultan, sin embargo mapean exactamente las mismas estructuras que el api original, pero traduciendo los keys al espanhol.
+En este caso él response es cambiante de acuerdo a los parámetros que se consultan, sin embargo, mapean exactamente las mismas estructuras que el api original, pero traduciendo los keys al español.
 
-Por ejemplo, si al api original le pedimos lo siguiente: `https://swapi.py4e.com/api/`, nos devolvera lo siguiente:
+Por ejemplo, si al api original le pedimos lo siguiente: `https://swapi.py4e.com/api/`, nos devolverá lo siguiente:
 ```json
 {
     "films": "https://swapi.py4e.com/api/films/",
@@ -91,4 +91,4 @@ Y en nuestro api al llamar a `/swapi`, nos devuelve lo siguiente:
 }
 ```
 
-Igualmente podemos llamar desde nuestro api a los distintos paths que provee el api original como: `/swapi/people`, `/swapi/people/1`, `/swapi/films`, entre otros.
+Igualmente, podemos llamar desde nuestro api a las distintas rutas que provee el api original como: `/swapi/people`, `/swapi/people/1`, `/swapi/films`, entre otros.
