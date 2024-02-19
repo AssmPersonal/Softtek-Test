@@ -1,0 +1,31 @@
+service: softtek
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  api:
+    handler: ./src/main.handler
+    events:
+      - httpApi:
+          path: /users
+          method: GET
+      - httpApi:
+          path: /users
+          method: POST
+      - httpApi:
+          path: /swapi
+          method: GET
+      - httpApi:
+          path: /swapi/{resource}
+          method: GET
+      - httpApi:
+          path: /swapi/{resource}/{id}
+          method: GET
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
